@@ -40,6 +40,7 @@ class White:
 class Game:
     def __init__(self):
         g.init()
+        g.display.set_caption("Diagonal Domination")
         self.screen = g.display.set_mode((920,800))
         self.screen.fill((250,200,156))#fill screen before using blit()
         self.white = White(self.screen)
